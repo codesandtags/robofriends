@@ -1,13 +1,20 @@
 # Robofriends
 
-This project is inspired in the Robofriends created by Andrei Neagoie.
+This project is being inspired by Robofriends, which was created by [Andrei Neagoie](https://github.com/aneagoie/robofriends/ in the [Complete Web Developer 2020 course](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/).
+
+This project contains the fundamental concepts used in every real web project like: 
+ * Responsive layout for (mobile, tablet, desktop).
+ * **React** (Or any framework / library) to render changes efficient way.
+ * **Redux** to manage the application state.
+ * API consumption to get data from any external resource.
 
 ## Dependencies
 
 |  Dependency | Description  |
 |---|---|
-| [Create React App](https://github.com/webpack/webpack)  |  Set up a modern web app by running one command. |
+| [Create React App](https://github.com/facebook/create-react-app)  |  Set up a modern web app by running one command. |
 | [Tachyons](https://tachyons.io/)  |  Functional css for humans  |
+| [Redux](https://es.redux.js.org/) | A Predictable State Container for JS Apps |
 
 ## License
 
