@@ -10,7 +10,7 @@ export const Card = ({ robot }) => {
         <div className="tc grow bg-light-blue br3 pa2 ma3 dib bw2 shadow-5 w5 mr2">
             <img src={urlImage} alt={name}/>
             <div>
-                <h2 className="f4">{name}</h2>
+                <h3 className="f4">{name}</h3>
                 <p className="ttl f6 lh-copy">{email}</p>
             </div>
         </div>

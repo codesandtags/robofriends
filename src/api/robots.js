@@ -70,3 +70,5 @@ export const robots = [
     isPet: false
   }
 ];
+
+export const url = 'https://jsonplaceholder.typicode.com/users';

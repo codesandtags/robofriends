@@ -6,7 +6,11 @@ This project contains the fundamental concepts used in every real web project li
  * Responsive layout for (mobile, tablet, desktop).
  * **React** (Or any framework / library) to render changes efficient way.
  * **Redux** to manage the application state.
+   * redux-thunk middleware
+   * redux-devtools-extension middleware
+   * redux-logger
  * API consumption to get data from any external resource.
+   * https://jsonplaceholder.typicode.com/users
 
 ## Dependencies
 

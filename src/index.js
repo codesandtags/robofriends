@@ -1,21 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { applyMiddleware, combineReducers, createStore } from 'redux';
 import { createLogger } from 'redux-logger/src';
-import { composeWithDevTools} from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunkMiddleware from 'redux-thunk';
 
 import './index.css';
 import App from './containers/App';
 import 'tachyons';
 
 import * as serviceWorker from './serviceWorker';
-import { searchRobots } from './store/reducers';
+import { requestRobots, searchRobots } from './store/reducers';
 
 const logger = createLogger();
 const store = createStore(
-    searchRobots,
-    composeWithDevTools(applyMiddleware(logger))
+    combineReducers({ searchRobots, requestRobots }),
+    composeWithDevTools(applyMiddleware(thunkMiddleware, logger))
 );
 
 ReactDOM.render(
