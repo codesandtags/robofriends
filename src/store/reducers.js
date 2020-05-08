@@ -1,8 +1,8 @@
-import {CHANGE_SEARCH_FIELD} from './constants';
+import { CHANGE_SEARCH_FIELD } from './constants';
 
 const initialState = {
-  searchField: '',
-  robots: {}
+    searchField: '',
+    robots: {}
 };
 
 /**
@@ -11,11 +11,9 @@ const initialState = {
  * @param action
  */
 export const searchRobots = (state = initialState, action = {}) => {
-    console.log(`Reducer Called with Action Type [${action.type}]`);
-
     switch (action.type) {
         case CHANGE_SEARCH_FIELD:
-            return  {
+            return {
                 ...state,
                 searchField: action.payload
             };

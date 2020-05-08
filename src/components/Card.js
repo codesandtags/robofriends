@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const Card = ({robot}) => {
-    const {name, email, id, isPet} = robot;
+export const Card = ({ robot }) => {
+    const { name, email, isPet } = robot;
     const imageSize = 150;
     const robotType = isPet ? 4 : 1;
     const urlImage = `https://robohash.org/${name}?size=${imageSize}x${imageSize}&set=set${robotType}`;

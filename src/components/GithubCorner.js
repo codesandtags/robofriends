@@ -8,7 +8,9 @@ export const GithubCorner = ({url}) => {
             <a href={url}
                target="_blank"
                className="github-corner"
-               aria-label="View source on GitHub">
+               aria-label="View source on GitHub"
+               rel="noopener noreferrer"
+            >
                 <svg width="80" height="80" viewBox="0 0 250 250"
                      style={{
                          fill: '#151513',
