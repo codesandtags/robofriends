@@ -2,7 +2,7 @@ import React from 'react';
 
 import './GithubCorner.css';
 
-export const GithubCorner = ({url}) => {
+const GithubCorner = ({url}) => {
     return (
         <div className="absolute top-0 right-0">
             <a href={url}
@@ -35,3 +35,5 @@ export const GithubCorner = ({url}) => {
         </div>
     )
 }
+
+export default GithubCorner;

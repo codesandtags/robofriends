@@ -4,10 +4,10 @@ import './App.css';
 import { CardList } from '../components/CardList';
 import { SearchBox } from '../components/SearchBox';
 import { Footer } from '../components/Footer';
-import { GithubCorner } from '../components/GithubCorner';
 // Redux
 import { connect } from 'react-redux';
 import { requestRobots, setSearchField } from '../store/actions';
+import GithubCorner from '../components/GithubCorner';
 
 const mapStateToProps = state => {
     return {
