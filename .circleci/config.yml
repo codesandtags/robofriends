@@ -5,6 +5,7 @@ jobs:
             - image: circleci/node:latest
         steps:
             - checkout
+            - run: echo "Installing dependencies"
             - run: npm install
             - run: CI=true npm run build
     test:
@@ -19,13 +20,13 @@ jobs:
             - image: circleci/node:latest
         steps:
             - checkout
-            - run: echo "Hellloooo!"
+            - run: echo "Hellloooo to the continuous integration using Circle CI!"
 workflows:
     version: 2
     build-test-and-lint:
         jobs:
-            - build
             - hithere
+            - build
             - test:
                   requires:
                       - hithere
