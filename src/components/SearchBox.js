@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-export const SearchBox = ({searchChange}) => {
+export const SearchBox = ({ searchChange }) => {
     return (
         <div className="pa2 ma2 flex justify-center center">
             <input
