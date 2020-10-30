@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { applyMiddleware, combineReducers, createStore } from 'redux'
-import { createLogger } from 'redux-logger/src'
+// import { createLogger } from 'redux-logger/src'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
 
@@ -13,10 +13,10 @@ import 'tachyons'
 import * as serviceWorker from './serviceWorker'
 import { requestRobots, searchRobots } from './store/reducers'
 
-const logger = createLogger()
+// const logger = createLogger()
 const store = createStore(
     combineReducers({ searchRobots, requestRobots }),
-    composeWithDevTools(applyMiddleware(thunkMiddleware, logger))
+    composeWithDevTools(applyMiddleware(thunkMiddleware))
 )
 
 ReactDOM.render(
