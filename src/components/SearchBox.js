@@ -4,6 +4,7 @@ export const SearchBox = ({ searchChange }) => {
     return (
         <div className="pa2 ma2 flex justify-center center">
             <input
+                aria-label="Search Robots"
                 type="search"
                 autoFocus
                 placeholder="Search your favorite robot 🤖 "
